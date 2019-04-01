@@ -1,2 +1,2 @@
 # IoT-Dashboard
-An general IoT dashboard 
+A general IoT dashboard 
