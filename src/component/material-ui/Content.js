@@ -61,7 +61,7 @@ function Content(props) {
               <Button variant="contained" color="primary" className={classes.addUser}>
                 添加
               </Button>
-              <Tooltip title="Reload">
+              <Tooltip title="刷新">
                 <IconButton>
                   <RefreshIcon className={classes.block} color="inherit" />
                 </IconButton>

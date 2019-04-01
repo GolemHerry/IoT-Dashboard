@@ -28,6 +28,7 @@
   "devDependencies": {
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
+    "@material-ui/styles": "^3.0.0-alpha.10",
     "elemental": "^0.6.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-transition-group": "^2.7.1"

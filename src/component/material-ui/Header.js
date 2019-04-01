@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
-import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import HelpIcon from '@material-ui/icons/Help';
@@ -15,7 +14,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-
 const lightColor = 'rgba(255, 255, 255, 0.7)';
 
 const styles = theme => ({
@@ -61,26 +59,29 @@ function Header(props) {
               </Grid>
             </Hidden>
             <Grid item xs />
-            <Grid item>
+            <Grid item>            
               <Typography className={classes.link} component="a" href="#">
                 查看文档
               </Typography>
             </Grid>
             <Grid item>
-              <Tooltip title="Alerts • No alters">
+              <Tooltip title="通知">
                 <IconButton color="inherit">
                   <NotificationsIcon />
                 </IconButton>
               </Tooltip>
             </Grid>
             <Grid item>
-              <IconButton color="inherit" className={classes.iconButtonAvatar}>
-                <Avatar className={classes.avatar} src="/static/images/avatar/1.jpg" />
-              </IconButton>
+            <Tooltip title="退出">
+                <IconButton color="inherit" className={classes.iconButtonAvatar} >               
+                   <img src="https://img.icons8.com/material/24/000000/enter-2--v1.png" alt=" "/>            
+                </IconButton>
+              </Tooltip>
             </Grid>
           </Grid>
         </Toolbar>
       </AppBar>
+    
       <AppBar
         component="div"
         className={classes.secondaryBar}
