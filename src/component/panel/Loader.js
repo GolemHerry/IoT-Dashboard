@@ -9,7 +9,7 @@ const styles = theme => ({
   },
 });
 
-function CircularIndeterminate(props) {
+function Loaders(props) {
   const { classes } = props;
   return (
     <div>
@@ -19,8 +19,8 @@ function CircularIndeterminate(props) {
   );
 }
 
-CircularIndeterminate.propTypes = {
+Loaders.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(CircularIndeterminate);
+export default withStyles(styles)(Loaders);
